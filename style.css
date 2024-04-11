@@ -1,0 +1,35 @@
+:root{
+    --PF_black: #000000;
+    --PF_white: #ffffff;
+    --PF_border: #cfcfcf;
+}
+
+.PF_highlight{
+    background-color: #ffff7f99;
+}
+.PF_highlight_P{
+    background-color: #ff7f7f99;
+}
+
+
+.PF_container {
+    position: relative;
+    display: inline-block;
+}
+.PF_hover-text {
+    display: inline-block;
+}
+.PF_description {
+    display: none;
+    position: absolute;
+    top: -2em;
+    left: 0;
+    z-index: 999999;
+    color: var(--PF_black);
+    background-color: var(--PF_white);
+    border: 1px solid var(--PF_border);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+.PF_hover-text:hover + .PF_description {
+    display: block;
+}

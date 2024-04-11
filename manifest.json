@@ -1,0 +1,20 @@
+{
+    "name": "Replace_PF",
+    "version": "1.0.0",
+    "description": "Replace Numbers",
+    "manifest_version": 3,
+    "permissions": ["tabs"],
+
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"],
+        "css": ["style.css"],
+        "exclude_matches": [
+          "*://www.google.com/*",
+          "*://chat.openai.com/*"
+        ]
+      }
+    ]
+  }
+  
