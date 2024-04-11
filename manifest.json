@@ -12,7 +12,7 @@
         "css": ["style.css"],
         "exclude_matches": [
           "*://www.google.com/*",
-          "*://chat.openai.com/*"
+          "*://example.com/*"
         ]
       }
     ]
